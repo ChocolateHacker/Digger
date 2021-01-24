@@ -1,2 +1,2 @@
 # Digger_logic
-Logic
+It's logic to game "Digger"
