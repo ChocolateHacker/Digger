@@ -35,7 +35,7 @@ namespace Digger
 
         public CreatureCommand Act(int x, int y)
         {
-            var moveCom = new CreatureCommand();
+            var moveCom = new CreatureCommand();//Assign the buttons through which the player moves 
             var key = Game.KeyPressed;
             if (key == Keys.Up)
                 if (y >= 1)
@@ -75,7 +75,7 @@ namespace Digger
         }
     }
 
-    public class Sack : ICreature
+    public class Sack : ICreature //creating a falling bag
     {
         int falling = 0;
         public CreatureCommand Act(int x, int y)
